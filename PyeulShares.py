@@ -73,7 +73,7 @@ def share_post(cookie, share_url, share_count):
         except requests.exceptions.RequestException as e:
             console.print(f"[red]({i}/{share_count * 2}) Failed to share post for account {cookie[:10]}: {e}")
 
-        time.sleep(0.5)  # Small delay for processing
+        time.sleep(0.0000001)  # Small delay for processing
 
     console.print(f"\n[bold cyan]Total successful shares for account {cookie[:10]}: {success_count}[/bold cyan]\n")
 
